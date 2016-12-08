@@ -1,14 +1,36 @@
-
-/*
-*	For realism purposes, make this look a bit like a newpaper article.
-*/
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+section {
+	padding: 30px 15px;
+}
+section.store-div {
+	padding: 0;
+}
+section.bordered {
+	border-top: 1px solid #ddd;
+}
+article.team {
+	text-align: center;
+}
+article.team img {
+	width: 300px;
+	max-width: 100%;
+}
+article.team h4 {
+	margin-bottom: 10px;
+}
+p.lead {
+	font-family: 'Indie Flower', cursive;
+}
 div.jumbotron {
 	zbackground-color: #615b52;
 	color: white;
-	font-family: "Guardian Egyptian Web","Guardian Text Egyptian Web",Georgia,serif;
+	/*font-family: "Guardian Egyptian Web","Guardian Text Egyptian Web",Georgia,serif;*/
+  font-family: 'Indie Flower', cursive;
 	font-size: 18px;
 	padding: 0px;
-	zmargin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 .head1 {
@@ -33,8 +55,15 @@ div.jumbotron .head1 h1 {
 	margin-top: 0px;
 	margin-bottom: 8px;
 }
+h2, h3, h4 {
+	font-family: 'Indie Flower', cursive;
+}
+p b, p strong {
+	font-family: 'Indie Flower', cursive;
+	font-size: 18px;
+}
 p.newspaper-p {
-	font-family: Georgia,serif !important;
+	/*font-family: Georgia,serif !important;*/
 	font-size: 20px;
 	color: #999;
 	text-align: justify;
@@ -127,18 +156,32 @@ img.newspaper-img {
 	zfloat: left;
 }
 
+.navbar-default .navbar-brand {
+	font-family: 'Indie Flower', cursive;
+	color: #333;
+}
 .navbar-brand img {
 	margin-top: 50px;
 	margin-top: -10px;
+	display: inline-block;
+}
+.navbar-default .navbar-nav li>a {
+	font-family: 'Indie Flower', cursive;
+	color: #333;
 }
 
 .navbar {
 	margin-bottom: 0px;
 }
+.navbar-default {
+	background: white;
+	border-radius: 0;
+	border: 0;
+}
 .carousel {
 	zwidth: 70%;
-	margin-left: 10%;
-	margin-right: 10%;
+	/*margin-left: 10%;*/
+	/*margin-right: 10%;*/
 }
 
 .carousel-inner > .item > img,
@@ -150,4 +193,42 @@ img.newspaper-img {
 .storemap .embed-responsive {
 	border: solid 1px #ccc;
 	background-color: #eee;
+}
+
+.text-img {
+	padding-left: 0;
+	padding-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+	.text-img {
+		display: block;
+		width: 100%;
+	}
+}
+.text-img.pull-right {
+	padding-left: 15px;
+	padding-right: 0;
+}
+
+/*
+MOBILE NAV
+*/
+.navbar-default .navbar-toggle {
+	border: 0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background: #333;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background: none;
+}
+
+/*
+FOOTER
+*/
+footer {
+	padding: 25px 15px;
+	background: #615b52;
+	text-align: center;
+	color: #fff;
 }
